@@ -7,6 +7,31 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Source File:" Margin="5"/>
+            <TextBox Name="SourceFilePath" Margin="5"/>
+            <Button Content="Browse" Click="BrowseSourceFile" Margin="5"/>
 
+            <TextBlock Text="Destination Folder:" Margin="5"/>
+            <TextBox Name="DestinationFolderPath" Margin="5"/>
+            <Button Content="Browse" Click="BrowseDestinationFolder" Margin="5"/>
+
+            <TextBlock Text="Number of Threads:" Margin="5"/>
+            <ComboBox Name="ThreadCountComboBox" Margin="5">
+                <ComboBoxItem Content="1"/>
+                <ComboBoxItem Content="2"/>
+                <ComboBoxItem Content="3"/>
+                <ComboBoxItem Content="4"/>
+                <ComboBoxItem Content="5"/>
+            </ComboBox>
+
+            <Button Content="Start" Click="StartCopy" Margin="5"/>
+            <Button Content="Pause" Click="PauseCopy" Margin="5"/>
+            <Button Content="Stop" Click="StopCopy" Margin="5"/>
+
+            <ProgressBar Name="CopyProgressBar" Height="25" Margin="5"/>
+
+            <TextBlock Name="StatusTextBlock" Margin="5"/>
+        </StackPanel>
     </Grid>
 </Window>
