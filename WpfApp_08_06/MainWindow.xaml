@@ -7,6 +7,38 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <StackPanel>
+            <TextBlock Text="Number Thread Priority:" Margin="10"/>
+            <ComboBox Name="NumberThreadPriority" Margin="10">
+                <ComboBoxItem Content="Lowest" />
+                <ComboBoxItem Content="BelowNormal" />
+                <ComboBoxItem Content="Normal" />
+                <ComboBoxItem Content="AboveNormal" />
+                <ComboBoxItem Content="Highest" />
+            </ComboBox>
 
+            <TextBlock Text="Letter Thread Priority:" Margin="10"/>
+            <ComboBox Name="LetterThreadPriority" Margin="10">
+                <ComboBoxItem Content="Lowest" />
+                <ComboBoxItem Content="BelowNormal" />
+                <ComboBoxItem Content="Normal" />
+                <ComboBoxItem Content="AboveNormal" />
+                <ComboBoxItem Content="Highest" />
+            </ComboBox>
+
+            <TextBlock Text="Symbol Thread Priority:" Margin="10"/>
+            <ComboBox Name="SymbolThreadPriority" Margin="10">
+                <ComboBoxItem Content="Lowest" />
+                <ComboBoxItem Content="BelowNormal" />
+                <ComboBoxItem Content="Normal" />
+                <ComboBoxItem Content="AboveNormal" />
+                <ComboBoxItem Content="Highest" />
+            </ComboBox>
+
+            <Button Content="Start Threads" Click="StartThreads" Margin="10" Width="100" HorizontalAlignment="Center"/>
+
+            <TextBlock Text="Output:" Margin="10"/>
+            <TextBox Name="OutputTextBox" Margin="10" Height="150" IsReadOnly="True" VerticalScrollBarVisibility="Auto"/>
+        </StackPanel>
     </Grid>
 </Window>
