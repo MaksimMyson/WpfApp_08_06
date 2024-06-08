@@ -7,6 +7,25 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
+        <Label Content="Enter text:" Grid.Row="0"/>
+        <TextBox x:Name="textInput" Grid.Row="0" Margin="100,0,0,0" Width="200"/>
+
+        <Button Content="Analyze" Click="AnalyzeButton_Click" Grid.Row="1" Margin="150,10,150,10"/>
+
+        <Label Content="Vowels:" Grid.Row="2"/>
+        <Label x:Name="vowelCountLabel" Grid.Row="2" HorizontalAlignment="Left" Margin="70,0,0,0"/>
+
+        <Label Content="Consonants:" Grid.Row="3"/>
+        <Label x:Name="consonantCountLabel" Grid.Row="3" HorizontalAlignment="Left" Margin="70,0,0,0"/>
+
+        <Label Content="Total characters:" Grid.Row="4"/>
+        <Label x:Name="totalCharacterCountLabel" Grid.Row="4" HorizontalAlignment="Left" Margin="120,0,0,0"/>
     </Grid>
 </Window>
