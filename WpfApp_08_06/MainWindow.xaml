@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
+        <Label Content="Enter a number:" Grid.Row="0"/>
+        <TextBox x:Name="numberTextBox" Grid.Row="0" Margin="120,0,0,0" Width="100"/>
+
+        <Button Content="Calculate" Click="CalculateButton_Click" Grid.Row="1" Margin="90,10,90,10"/>
+
+        <Label x:Name="resultLabel" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     </Grid>
 </Window>
